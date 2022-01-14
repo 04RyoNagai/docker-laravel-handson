@@ -17,7 +17,7 @@ class CreateProjectsTable extends Migration
             $table->id();
             $table->string('title', 254);
             $table->string('status', 254)->default('open');
-            $table->text('desctiption');
+            $table->text('description');
             $table->timestamp('deleted_at')->nullable();
             $table->timestamp('created_at');
             $table->timestamp('updated_at');
