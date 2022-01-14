@@ -1,0 +1,73 @@
+.new-project-button {
+    width: 150px;
+    height: 40px;
+    font-size: 17px;
+    background-color: #1A76D1;
+    color: white;
+    float: right;
+    border-radius: 15px;
+    border: none;
+    outline: none;
+}
+
+.sort-container {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.select-status {
+    margin: 40px 0 20px 0;
+}
+
+.project-list {
+    margin: 0 5% 0 5%;
+}
+
+.project-title {
+    font-weight: bold;
+    font-size: medium;
+}
+
+.sort-btn {
+    background-color: #1A76D1;
+    color: white;
+}
+
+.sort-switch {
+    width: 50px;
+}
+
+.sort-switch input[type="checkbox"] {
+    display: none;
+}
+
+.sort-switch label {
+    display: block;
+    border: none;
+    border-radius: 15px;
+    height: 32px;
+    font-size: 17px;
+    text-align: center;
+    background: #d2302f;
+    box-shadow: none;
+    padding-top: 3px;
+}
+
+.sort-switch label span:after{
+    content: "降順";
+    color: #fff;
+}
+
+.sort-switch #sort-btn:checked + label {
+    background: #1a76d1;
+    box-shadow: none;
+}
+
+.sort-switch #sort-btn:checked + label span:after {
+    content: "昇順";
+    color: #fff;
+}
+
+h1 {
+    font-weight: bold;
+}
