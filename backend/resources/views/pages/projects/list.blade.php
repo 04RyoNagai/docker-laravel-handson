@@ -10,7 +10,7 @@
     </header>
     <body>
         <h1>プロジェクト一覧</h1>
-        <input type="button" class="new-project-button" value="プロジェクト作成">
+        <button class="new-project-button" onclick="location.href='projects/new'">プロジェクト作成</button>
         <div class="select-status">
             <input type="radio" name="status" value="open">Open
             <input type="radio" name="status" value="closed">Closed
