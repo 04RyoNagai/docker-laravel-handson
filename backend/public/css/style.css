@@ -71,3 +71,27 @@
 h1 {
     font-weight: bold;
 }
+
+.new-project-form {
+    margin: 5% 5% 0 5%;
+}
+
+.new-project-submit-btn {
+    width: 150px;
+    height: 40px;
+    font-size: 17px;
+    background-color: #1A76D1;
+    color: white;
+    border-radius: 15px;
+    border: none;
+    outline: none;
+}
+
+.new-project-form-label {
+    font-size: 25px;
+}
+
+.asterisk {
+    font-size: 25px;
+    color: red;
+}
