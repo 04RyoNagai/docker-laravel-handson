@@ -3,7 +3,7 @@
     <header>
         <title>プロジェクト一覧画面</title>
         <link href="{{ asset('css/app.css') }}" rel="stylesheet">
-        <link href="css/style.css" rel="stylesheet">
+        <link href="{{ asset('css/style.css') }}" rel="stylesheet">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
         <script src="{{ asset('js/app.js') }}"></script>
         <script src="{{ asset('js/projects.js')}}"></script>
