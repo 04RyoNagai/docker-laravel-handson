@@ -2,24 +2,23 @@
 <html lang="ja">
     <head>
         <meta charset="utf-8">
-        <title>プロジェクト作成</title>
+        <title>プロジェクト詳細</title>
         <link href="{{ asset('css/app.css') }}" rel="stylesheet">
         <link href="{{ asset('css/style.css') }}" rel="stylesheet">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
         <script src="{{ asset('js/app.js') }}"></script>
-        <script src="{{ asset('js/projects.js')}}"></script>
     </head>
     <body>
         <section class="col-md-11">
             <div class="header-container">
                 <h1>{{$project->title}}</h1>
                 <button class="watch-button">ウォッチ</button>
-                <div class="button-group">
-                    <button class="member-button">メンバー</button>
-                    <button class="close-button">クローズ</button>
-                    <button class="edit-button">プロジェクト編集</button>
-                    <button class="delete-button">プロジェクト削除</button>
-                </div>
+            </div>
+            <div class="button-group">
+                <button class="member-button">メンバー</button>
+                <button class="close-button">クローズ</button>
+                <button class="edit-button">プロジェクト編集</button>
+                <button class="delete-button">プロジェクト削除</button>
             </div>
             <div class="description-container">
                 <label class="project-description">{{$project->description}}</label>

@@ -103,11 +103,12 @@ h1 {
 
 .description-container {
     border: 1px solid;
-    margin: 10px 5% 0 5%;
+    margin-top: 10px;
 }
 
 .button-group {
-    margin-left: 30%;
+    display: flex;
+    justify-content: flex-end;
 }
 
 .button-group button {
