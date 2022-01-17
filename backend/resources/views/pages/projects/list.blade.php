@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="ja">
+    @include('./partials.header')
     <header>
         <title>プロジェクト一覧画面</title>
         <link href="{{ asset('css/app.css') }}" rel="stylesheet">
@@ -32,7 +33,7 @@
                 <tr>
                     <td class="col-md-8">
                         <div class="list-title">
-                            <a href="projects/{{$project->id}}" class="project-title">{{$project->title}}</label>
+                            <a href="projects/{{$project->id}}" class="project-title">{{$project->title}}</label></a>
                         </div>
                         <div class="list-label">
                             <label class="project-description">{{$project->description}}</label>
