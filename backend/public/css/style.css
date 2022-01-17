@@ -168,3 +168,24 @@ h1 {
 section {
     margin: 0 5% 0 5%;
 }
+
+.project-title:link, .project-title:visited, .project-title:hover, .project-title:active {
+    color: black;
+}
+
+.project-description {
+    height: 2em;
+    width: 40em;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+.project-title {
+    display: block;
+    height: 2em;
+    width: 40em;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}

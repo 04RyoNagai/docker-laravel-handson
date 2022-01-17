@@ -6,7 +6,6 @@
         <link href="{{ asset('css/style.css') }}" rel="stylesheet">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
         <script src="{{ asset('js/app.js') }}"></script>
-        <script src="{{ asset('js/projects.js')}}"></script>
     </header>
     <body>
         <h1>プロジェクト一覧</h1>
@@ -32,9 +31,11 @@
             @foreach ($projects as $project)
                 <tr>
                     <td class="col-md-8">
-                        <label class="project-title">{{$project->title}}</label>
-                        <div>
-                            <label>{{$project->description}}</label>
+                        <div class="list-title">
+                            <a href="projects/{{$project->id}}" class="project-title">{{$project->title}}</label>
+                        </div>
+                        <div class="list-label">
+                            <label class="project-description">{{$project->description}}</label>
                         </div>
                     </td>
                     <td class="col-md-2">
