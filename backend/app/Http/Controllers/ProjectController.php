@@ -48,4 +48,11 @@ class ProjectController extends Controller
         $project->save();
         return redirect('/projects');
     }
+
+    public function destroy(Request $request)
+    {
+        $project = Project::find($request->input('id'));
+        $project->delete();
+        return redirect('/projects');
+    }
 }
