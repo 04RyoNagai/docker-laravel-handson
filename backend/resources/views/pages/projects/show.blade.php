@@ -17,7 +17,7 @@
             <div class="button-group">
                 <button class="member-button">メンバー</button>
                 <button class="close-button">クローズ</button>
-                <button class="edit-button">プロジェクト編集</button>
+                <button class="edit-button" onclick="location.href='{{$project->id}}/edit'">プロジェクト編集</button>
                 <button class="delete-button">プロジェクト削除</button>
             </div>
             <div class="description-container">
