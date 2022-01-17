@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="ja">
+    @include('./partials.header')
     <head>
         <meta charset="utf-8">
         <title>プロジェクト編集</title>
