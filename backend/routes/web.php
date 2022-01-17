@@ -21,3 +21,6 @@ Route::get('/projects', [ProjectController::class, 'index']);
 Route::get('/projects/new', [ProjectController::class, 'new']);
 Route::post('/projects/new', [ProjectController::class, 'create']);
 Route::get('/projects/{id}', [ProjectController::class, 'show']);
+Route::post('projects/{id}', [ProjectController::class, 'destroy']);
+Route::get('/projects/{id}/edit', [ProjectController::class, 'edit']);
+Route::post('/projects/{id}/edit', [ProjectController::class, 'save']);
