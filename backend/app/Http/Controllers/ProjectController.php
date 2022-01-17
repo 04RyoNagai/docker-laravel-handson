@@ -26,4 +26,11 @@ class ProjectController extends Controller
         $project->save();
         return redirect('/projects');
     }
+
+    public function show($id)
+    {
+        $project = Project::find($id);
+        $issues = [];
+        return view('pages.projects.show', compact('project', 'issues'));
+    }
 }
