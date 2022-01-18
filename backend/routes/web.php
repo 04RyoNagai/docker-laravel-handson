@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\ProjectController;
+use App\Http\Controllers\AuthController;
 
 /*
 |--------------------------------------------------------------------------
@@ -17,7 +18,9 @@ use App\Http\Controllers\ProjectController;
 Route::get('/', function () {
     return view('welcome');
 });
-Route::get('/projects', [ProjectController::class, 'index']);
+Route::get('/login', [AuthController::class, 'index']);
+Route::post('/login', [AuthController::class, 'login']);
+Route::get('/projects', [ProjectController::class, 'index'])->name('projects.index');
 Route::get('/projects/new', [ProjectController::class, 'new']);
 Route::post('/projects/new', [ProjectController::class, 'create']);
 Route::get('/projects/{id}', [ProjectController::class, 'show']);
