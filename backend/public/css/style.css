@@ -190,8 +190,7 @@ section {
     text-overflow: ellipsis;
 }
 
-.header-bar
-{
+.header-bar {
     height: 3em;
     width: auto;
     background-color: #1A76D1;
@@ -212,4 +211,52 @@ section {
 .header-table p {
     text-align: center;
     margin: 0;
+}
+
+.guest-header-bar {
+    height: 3em;
+    width: auto;
+    background-color: #1A76D1;
+}
+
+.guest-header-bar p {
+    font-size: 25px;
+    color: white;
+    font-weight: bold;
+}
+
+.login-form div {
+    margin: 20px auto 0 auto;
+}
+
+.form-parts-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 15em;
+    margin-top: 5em;
+    background-color: lightgrey;
+    border-radius: 15px;
+}
+
+.auth-button-group {
+    display: flex;
+    justify-content: center;
+}
+
+.auth-button-group button {
+    width: 150px;
+    height: 40px;
+    font-size: 17px;
+    color: white;
+    background-color: #1A76D1;
+    border-radius: 15px;
+    border: none;
+    outline: none;
+    margin-left: 5px;
+}
+
+.password-forgot {
+    display: flex;
+    justify-content: center;
 }
